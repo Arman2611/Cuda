@@ -1,0 +1,515 @@
+/*Global Styles*/
+
+* {box-sizing: border-box}
+body {
+	width: 100%;
+	max-width: 1440px;
+	margin: 0px auto;
+	font-family: Arial;
+}
+body > section, header, footer {
+	width: 100%;
+	display: flex;
+}
+body > section {
+	padding: 100px;
+}
+
+/*Styling header*/
+header {
+	background-color: /*#87509C*/ green;
+	justify-content: center;
+	user-select: none;
+}
+header .wrapper {
+	width: 100%;
+	max-width: 1100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header .logo {
+	display: flex;
+	padding: 10px 20px;
+}
+header nav {
+	padding: 0 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+header nav a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 8px 10px;
+	margin: 4px 14px;
+	border-radius: 4px;
+	transition: 0.4s ease;
+}
+header nav a:hover {background-color: #643A79;}
+header nav a.active {background-color: #643A79}
+
+/*Styling Welcome Sector*/
+.welcome {
+	background-color: #87509C;
+	flex-direction: column;
+	align-items: center;
+}
+.welcome p {
+	color: white;
+	font-size: 42px;
+	text-align: center;
+	width: 80%;
+	max-width: 950px;
+	margin: 20px 0;
+}
+.welcome a {
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #EB7D4B;
+	padding: 20px;
+	width: 60%;
+	max-width: 290px;
+	border-radius: 5px;
+	margin: 20px 0;
+	transition: 0.4s ease;
+}
+.welcome a:hover {background-color: #FF8B32}
+
+/*Styling  Big Sectors*/
+body > section {
+	flex-direction: column;
+	align-items: center;
+}
+body > section > h2 {
+	text-transform: uppercase;
+	text-align: center;
+}
+body > section > .hr-line {
+	border: 1px solid #14A289;
+	background-color: #14A289;
+	width: 80px;
+}
+body > section > p {
+	width: 70%;
+	margin: 20px 0;
+	text-align: center;
+}
+.cell-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 40px;
+	width: 100%;
+}
+.cell {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px;
+	padding: 10px;
+}
+.cell .image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+.cell h3 {
+	text-align: center;
+	text-transform: uppercase;
+	margin: 14px 0 2px 0;
+}
+.cell h4 {
+	text-align: center;
+	margin: 2px 0;
+}
+.cell p {
+	text-align: center;
+	flex-grow: 1
+}
+.cell .social-links {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 2px 4px;
+}
+.cell .social-links a {
+	text-decoration: none;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: FontAwesome;
+	border-radius: 50%;
+	background-color: #BDD1DF;
+	transition: 0.4s ease;
+}
+.cell .social-links a:hover {background-color: black}
+
+/*Styling Services Sector*/
+.services {
+	background-color: #17C2A4;
+	color: white;
+}
+
+/*Styling Team Sector*/
+.team {
+	background-color: #E7F1F8;
+	color: #3c4761;
+}
+.team .cell .image {
+	background-color: #878787;
+	border-radius: 50%;
+	box-shadow: 0px 0px 10px 5px #111;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.team .cell .image img {height: 100%}
+.team .cell h4 {color: #30bae7}
+
+/*Styling Skills Sector*/
+.skills {
+	background-color: white;
+	color: #3c4761;
+}
+.skills .cell .image {
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+}
+/*Styling Portfolio Sector*/
+.portfolio {
+	background-color:#FFDD99;
+	color: #3c4761;
+}
+.portfolio nav {
+	padding: 0 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.portfolio nav a { 
+	color: #5D5648;
+	background-color: #EBC985;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 8px 10px;
+	margin: 4px;
+	border-radius: 4px;
+	transition: 0.4s ease;
+}
+.portfolio nav a:hover {background-color: white}
+.portfolio nav a.active {background-color: white}
+.laptop-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 40px;
+}
+.big-cell {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px 10px;
+}
+.big-cell .laptop {width: 100%}
+.big-cell .laptop img {width: 100%}
+.big-cell h4 {
+	text-align: center;
+	text-transform: uppercase;
+	margin: 10px 4px;
+}
+.portfolio>a {
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #16B89C;
+	padding: 20px;
+	width: 60%;
+	max-width: 290px;
+	border-radius: 5px;
+	margin: 20px 0;
+	transition: 0.4s ease;
+}
+.portfolio>a:hover {background-color: #6666ff}
+/*Styling Testimonals Sector*/
+.testimonals {
+	background-color: #D74680;
+	color: white;
+}
+.comments-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.comment-cell {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 10px;
+	margin: 20px 0px;
+}
+.comment-cell .image {
+	background-color: #787878;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	max-width: 80px;
+	min-width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 10px 5px #111;
+}
+.comment-cell .image img {height: 100%}
+.comment {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10px 40px;
+}
+.comment q {
+	text-align: left;
+	font-size: 13px;
+	font-style: italic;
+	margin: 2px 0;
+}
+.comment h3 {
+	text-align: left;
+	text-transform: uppercase;
+	margin: 12px 0 2px 0;
+}
+.comment h4 {
+	text-align: left;
+	font-size: 14px;
+	color: #F7BF94;
+	margin: 2px 0;
+}
+/*Styling Get-in-touch Sector*/
+.get-in-touch {
+	background-color: #3C5499;
+	color: white;
+}
+form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px
+}
+form section {
+	display: flex;
+	justify-content: space-between;
+}
+form section, form textarea {margin: 10px 0}
+form input {width: 49%}
+form input, form textarea {
+	color: white;
+	background-color: #26386E;
+	padding: 18px 20px;
+	border: 0px;
+	border-radius: 5px;
+	resize: none;
+}
+form input::placeholder, form textarea::placeholder {color: white}
+
+/*   For red asterisk in placeholder see
+http://jsfiddle.net/oceog/WddQ8/1/    
+
+    How it works - create a <div> that contains placeholder's 
+text and a <span> inside it,which contains an asterisk
+(*) symbol. <div> shall have "cursor: text". <div> has 
+"display: none" at start.
+    <div> gets absolute positioning and moves on placeholder's 
+place. <input> and <div> are inserted in a <label> so that 
+clicking on <div> we enter the <input>
+    Add attribute "required" in input/textarea tag. This means, 
+that free inputs are :invalid.
+    Add CSS (input:invalid + div {display: inline}) - This shows 
+all <div>s, which are after :invaild inputs in html code.
+
+*/
+
+form input[type="submit"] {
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #29A0C7;
+	padding: 20px;
+	width: 60%;
+	max-width: 290px;
+	border-radius: 5px;
+	margin: 20px 0;
+	cursor: pointer;
+	transition: 0.4s ease;
+}
+form input[type="submit"]:hover {background-color: #66cc33;}
+
+/*Styling Footer*/
+footer {
+	background-color: #344B8E;
+	display: flex;
+	justify-content: center;
+	padding: 25px;
+}
+footer .social-links {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 90%;
+}
+footer .social-links a {
+	text-decoration: none;
+	color: white;
+	margin: 10px 20px;
+}
+footer .social-links a.active {color: #30BAE7}
+
+
+
+/*Media Queries*/
+
+/*Mobile Styling*/
+@media only screen and (max-width: 499px) {
+	/*Nokia 1200 styling*/
+	@media only screen and (max-width: 319px) {
+		body {width: 320px};
+	}
+	/*SmartPhone styling*/
+	header .wrapper {
+		padding: 20px;
+		flex-direction: column;
+	}
+	header .logo {order: 2}
+	body > section {
+		padding: 40px 20px;
+	}
+	.welcome p {font-size: 20px}
+	.cell {width: 40%}
+	.cell h3 {font-size: 12px}
+	.cell h4 {font-size: 10px}
+	.cell p {font-size: 8px}
+	.cell .image {
+		width: 90px;
+		height: 90px;
+	}
+	.cell .social-links a {
+		margin: 2px 2px;
+		width: 17px;
+		height: 17px;
+		font-size: 8px;
+	}
+	.big-cell {width: 100%}
+	.portfolio a {
+		font-size: 11px;
+	}
+	.comments-container {
+		flex-direction: column;
+		align-items: center;
+	}
+	.comment-cell {
+		flex-direction: column;
+		align-items: center;
+	}
+	.comment {margin-top: 10px}
+	.comment h3, .comment h4, .comment q {text-align: center;}
+	form section {
+		flex-direction: column;
+	}
+	form section, form textarea {width: 100%}
+	form input {
+		width: 100%;
+		margin: 2px 0;
+	}
+	footer .social-links {width: 100%}
+	footer .social-links a {font-size: 14px}
+}
+
+
+/*Tablet Styling*/
+@media only screen and (min-width: 500px) and (max-width: 1023px) {
+	header .wrapper {
+		padding: 40px 0;
+		justify-content: space-between;
+	}
+	body > section {
+		padding: 40px 20px;
+	}
+	.cell {
+		width: 40%;
+		max-width: 200px;
+	}
+	.cell .image {
+		width: 120px;
+		height: 120px;
+	}
+	.cell .social-links a {
+		margin: 2px 4px;
+		width: 28px;
+		height: 28px;
+		font-size: 12px;
+	}
+	.big-cell {
+		width: 40%;
+		max-width: 320px;
+	}
+	.comment-cell {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 48%;
+	}
+	.comment {margin-top: 10px;flex-grow: 1;}
+	.comment h3, .comment h4, .comment q {text-align: center;}
+	.comment q {flex-grow: 1}
+	form section, form textarea {
+		width: 100%;
+		max-width: 700px;
+	}
+}
+
+
+/*Desktop Styling*/
+@media only screen and (min-width: 1024px) {
+	header .wrapper {
+		padding: 60px 0;
+		justify-content: space-between;
+	}
+	.cell {
+		width: 21%;
+		max-width: 260px;
+	}
+	.cell .image {
+		width: 150px;
+		height: 150px;
+	}
+	.cell .social-links a {
+		margin: 2px 5px;
+		width: 26px;
+		height: 26px;
+		font-size: 14px;
+	}
+	.big-cell {
+		width: 40%;
+		max-width: 540px;
+	}
+	.comment-cell {
+		width: 48%;
+		max-width: 540px;
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+	}
+	.comment q {
+		font-size: 16px;
+		line-height: 160%;
+	}
+	form section, form textarea {width: 70%}
+}
